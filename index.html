@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_aa357813c7ec398605b4e3128a7b930b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_aa357813c7ec398605b4e3128a7b930b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_aa357813c7ec398605b4e3128a7b930b = L.map(
+                "map_aa357813c7ec398605b4e3128a7b930b",
+                {
+                    center: [36.5, 127.5],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 7,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_75e2b2a5eebe7180f626890d8d82398a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_75e2b2a5eebe7180f626890d8d82398a.addTo(map_aa357813c7ec398605b4e3128a7b930b);
+        
+    
+            var marker_cluster_89571a880e0d6dbf93ec2a7bbe0b0a61 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_ac76a25bfc1c75671acdfd924aab9150 = L.marker(
+                [35.1091728, 128.9487589],
+                {
+}
+            ).addTo(marker_cluster_89571a880e0d6dbf93ec2a7bbe0b0a61);
+        
+    
+            var icon_31e0178bd30f998096de6f44b64bee12 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5557f40cfa64d145903d6740ae5c349f = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_8fcd44a05d92d0602ad27020fd62c3d7 = $(`<div id="html_8fcd44a05d92d0602ad27020fd62c3d7" style="width: 100.0%; height: 100.0%;">         <div style='font-family: "Malgun Gothic", sans-serif; width: 330px; line-height: 1.6;'>             <div style='font-size: 13px; color: #666;'>🟢 [SOUTH] '26. 6. 5(금)</div>             <h3 style='margin: 5px 0 10px 0; color: green; font-size: 18px;'><b>부산2(722)</b></h3>             <hr style='border: 0.5px solid #ddd; margin: 5px 0 10px 0;'>             <div style='font-size: 13px; color: #333;'>                 <b>1) Camp :</b> 부산2(722)<br>                 <b>2) 대회명 :</b> 2026 물사랑 낙동강 200km울트라마라톤<br>                 <b>3) 장소 :</b> 을숙도물문화센터(부산광역시 사하구 낙동남로1233번길 92)<br>                 <b>4) 주최 :</b> (사)KUMF 부산지맹(☎010-3878-1159)             </div>         </div>         </div>`)[0];
+                popup_5557f40cfa64d145903d6740ae5c349f.setContent(html_8fcd44a05d92d0602ad27020fd62c3d7);
+            
+        
+
+        marker_ac76a25bfc1c75671acdfd924aab9150.bindPopup(popup_5557f40cfa64d145903d6740ae5c349f)
+        ;
+
+        
+    
+    
+            marker_ac76a25bfc1c75671acdfd924aab9150.bindTooltip(
+                `<div>
+                     부산2(722) : 2026 물사랑 낙동강 200km울트라마라톤
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ac76a25bfc1c75671acdfd924aab9150.setIcon(icon_31e0178bd30f998096de6f44b64bee12);
+            
+    
+            var marker_af8c27de4da85355685a203542eb547c = L.marker(
+                [37.5187802, 126.9414268],
+                {
+}
+            ).addTo(marker_cluster_89571a880e0d6dbf93ec2a7bbe0b0a61);
+        
+    
+            var icon_47c4d7abe204a2551576ee10642098d5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8ddb7107feb57152548dc0d77670aa10 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_d65d26ed87309659621618317493f579 = $(`<div id="html_d65d26ed87309659621618317493f579" style="width: 100.0%; height: 100.0%;">         <div style='font-family: "Malgun Gothic", sans-serif; width: 330px; line-height: 1.6;'>             <div style='font-size: 13px; color: #666;'>🔴 [WEST] '26. 6. 6(토)</div>             <h3 style='margin: 5px 0 10px 0; color: red; font-size: 18px;'><b>일산2(101)</b></h3>             <hr style='border: 0.5px solid #ddd; margin: 5px 0 10px 0;'>             <div style='font-size: 13px; color: #333;'>                 <b>1) Camp :</b> 일산2(101)<br>                 <b>2) 대회명 :</b> 2026 백산수 심심런<br>                 <b>3) 장소 :</b> 여의도한강공원 물빛무대앞광장(서울특별시 영등포구 한강남자전거길 1451)<br>                 <b>4) 주최 :</b> 사단법인 한국백혈병소아암협회(☎070-4350-5663)             </div>         </div>         </div>`)[0];
+                popup_8ddb7107feb57152548dc0d77670aa10.setContent(html_d65d26ed87309659621618317493f579);
+            
+        
+
+        marker_af8c27de4da85355685a203542eb547c.bindPopup(popup_8ddb7107feb57152548dc0d77670aa10)
+        ;
+
+        
+    
+    
+            marker_af8c27de4da85355685a203542eb547c.bindTooltip(
+                `<div>
+                     일산2(101) : 2026 백산수 심심런
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_af8c27de4da85355685a203542eb547c.setIcon(icon_47c4d7abe204a2551576ee10642098d5);
+            
+    
+            var marker_b039ee03a94deb6e4b238bf292c6f862 = L.marker(
+                [37.8807984, 127.7303888],
+                {
+}
+            ).addTo(marker_cluster_89571a880e0d6dbf93ec2a7bbe0b0a61);
+        
+    
+            var icon_fbb23b6db406ee176758a7f8db52bc44 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_772e32491dcafbcd5587cacd2bb54dda = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_81a63a96a9b05e23e5fd821f80342753 = $(`<div id="html_81a63a96a9b05e23e5fd821f80342753" style="width: 100.0%; height: 100.0%;">         <div style='font-family: "Malgun Gothic", sans-serif; width: 330px; line-height: 1.6;'>             <div style='font-size: 13px; color: #666;'>🔵 [EAST] '26. 6. 6(토)</div>             <h3 style='margin: 5px 0 10px 0; color: blue; font-size: 18px;'><b>M_춘천1(208)</b></h3>             <hr style='border: 0.5px solid #ddd; margin: 5px 0 10px 0;'>             <div style='font-size: 13px; color: #333;'>                 <b>1) Camp :</b> M_춘천1(208)<br>                 <b>2) 대회명 :</b> 2026 춘천봄내마라톤<br>                 <b>3) 장소 :</b> 춘천시청 호반광장 일원(강원특별자치도 춘천시 시청길 11)<br>                 <b>4) 주최 :</b> 강원도민일보(☎010-6328-4600)             </div>         </div>         </div>`)[0];
+                popup_772e32491dcafbcd5587cacd2bb54dda.setContent(html_81a63a96a9b05e23e5fd821f80342753);
+            
+        
+
+        marker_b039ee03a94deb6e4b238bf292c6f862.bindPopup(popup_772e32491dcafbcd5587cacd2bb54dda)
+        ;
+
+        
+    
+    
+            marker_b039ee03a94deb6e4b238bf292c6f862.bindTooltip(
+                `<div>
+                     M_춘천1(208) : 2026 춘천봄내마라톤
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b039ee03a94deb6e4b238bf292c6f862.setIcon(icon_fbb23b6db406ee176758a7f8db52bc44);
+            
+    
+            var marker_35c3165ff45e165bdd5200be9bad3cb8 = L.marker(
+                [37.5561595, 126.9100238],
+                {
+}
+            ).addTo(marker_cluster_89571a880e0d6dbf93ec2a7bbe0b0a61);
+        
+    
+            var icon_754cb6eb2686e0a6a6d8d820cf28b532 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2fad39def5ac74adce95f037a4221643 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_665258a8651f53c98e8d9caaee7014bf = $(`<div id="html_665258a8651f53c98e8d9caaee7014bf" style="width: 100.0%; height: 100.0%;">         <div style='font-family: "Malgun Gothic", sans-serif; width: 330px; line-height: 1.6;'>             <div style='font-size: 13px; color: #666;'>🔴 [WEST] '26. 6. 6(토)</div>             <h3 style='margin: 5px 0 10px 0; color: red; font-size: 18px;'><b>일산6(746)</b></h3>             <hr style='border: 0.5px solid #ddd; margin: 5px 0 10px 0;'>             <div style='font-size: 13px; color: #333;'>                 <b>1) Camp :</b> 일산6(746)<br>                 <b>2) 대회명 :</b> 2026 푸른하늘런<br>                 <b>3) 장소 :</b> 상암 월드컵공원 평화광장(서울특별시 마포구 월드컵로 251)<br>                 <b>4) 주최 :</b> (사)대한이에스지협회(☎02-2606-8187)             </div>         </div>         </div>`)[0];
+                popup_2fad39def5ac74adce95f037a4221643.setContent(html_665258a8651f53c98e8d9caaee7014bf);
+            
+        
+
+        marker_35c3165ff45e165bdd5200be9bad3cb8.bindPopup(popup_2fad39def5ac74adce95f037a4221643)
+        ;
+
+        
+    
+    
+            marker_35c3165ff45e165bdd5200be9bad3cb8.bindTooltip(
+                `<div>
+                     일산6(746) : 2026 푸른하늘런
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_35c3165ff45e165bdd5200be9bad3cb8.setIcon(icon_754cb6eb2686e0a6a6d8d820cf28b532);
+            
+    
+            var marker_861ccd7cba318258357ff91b3c9a8cf7 = L.marker(
+                [37.5667893, 126.9784204],
+                {
+}
+            ).addTo(marker_cluster_89571a880e0d6dbf93ec2a7bbe0b0a61);
+        
+    
+            var icon_d703b67bbc113019173834bd8eaac89e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6b65a672df8017288af8f9da26ec9226 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_370d711737c17efa53e287ca6002950c = $(`<div id="html_370d711737c17efa53e287ca6002950c" style="width: 100.0%; height: 100.0%;">         <div style='font-family: "Malgun Gothic", sans-serif; width: 330px; line-height: 1.6;'>             <div style='font-size: 13px; color: #666;'>🔵 [EAST] '26. 6. 7(일)</div>             <h3 style='margin: 5px 0 10px 0; color: blue; font-size: 18px;'><b>중구1(913)</b></h3>             <hr style='border: 0.5px solid #ddd; margin: 5px 0 10px 0;'>             <div style='font-size: 13px; color: #333;'>                 <b>1) Camp :</b> 중구1(913)<br>                 <b>2) 대회명 :</b> 2026 마인드마라톤<br>                 <b>3) 장소 :</b> 서울광장(서울특별시 중구 세종대로 110)<br>                 <b>4) 주최 :</b> 한국수력원자력(주) 더버터(☎02-3789-7861)             </div>         </div>         </div>`)[0];
+                popup_6b65a672df8017288af8f9da26ec9226.setContent(html_370d711737c17efa53e287ca6002950c);
+            
+        
+
+        marker_861ccd7cba318258357ff91b3c9a8cf7.bindPopup(popup_6b65a672df8017288af8f9da26ec9226)
+        ;
+
+        
+    
+    
+            marker_861ccd7cba318258357ff91b3c9a8cf7.bindTooltip(
+                `<div>
+                     중구1(913) : 2026 마인드마라톤
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_861ccd7cba318258357ff91b3c9a8cf7.setIcon(icon_d703b67bbc113019173834bd8eaac89e);
+            
+    
+            var marker_d1d45e5a1b1a12ab0396895fbc9d7332 = L.marker(
+                [37.5255357, 126.9215857],
+                {
+}
+            ).addTo(marker_cluster_89571a880e0d6dbf93ec2a7bbe0b0a61);
+        
+    
+            var icon_54415e4af4b371c50f7a11ece058406d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b54398852df678aa428d6ab58f8be76f = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_65146e36ee346a88695454fff82f0d5c = $(`<div id="html_65146e36ee346a88695454fff82f0d5c" style="width: 100.0%; height: 100.0%;">         <div style='font-family: "Malgun Gothic", sans-serif; width: 330px; line-height: 1.6;'>             <div style='font-size: 13px; color: #666;'>🔴 [WEST] '26. 6. 7(일)</div>             <h3 style='margin: 5px 0 10px 0; color: red; font-size: 18px;'><b>일산2(101)</b></h3>             <hr style='border: 0.5px solid #ddd; margin: 5px 0 10px 0;'>             <div style='font-size: 13px; color: #333;'>                 <b>1) Camp :</b> 일산2(101)<br>                 <b>2) 대회명 :</b> 2026 iM뱅크 코리아 오픈 마라톤<br>                 <b>3) 장소 :</b> 여의도공원 문화의마당(서울특별시 영등포구 여의공원로 68)<br>                 <b>4) 주최 :</b> iM뱅크/런코리아(☎00-1566-1936)             </div>         </div>         </div>`)[0];
+                popup_b54398852df678aa428d6ab58f8be76f.setContent(html_65146e36ee346a88695454fff82f0d5c);
+            
+        
+
+        marker_d1d45e5a1b1a12ab0396895fbc9d7332.bindPopup(popup_b54398852df678aa428d6ab58f8be76f)
+        ;
+
+        
+    
+    
+            marker_d1d45e5a1b1a12ab0396895fbc9d7332.bindTooltip(
+                `<div>
+                     일산2(101) : 2026 iM뱅크 코리아 오픈 마라톤
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d1d45e5a1b1a12ab0396895fbc9d7332.setIcon(icon_54415e4af4b371c50f7a11ece058406d);
+            
+    
+            var marker_876e780630e960ee96688ecc9dfa5926 = L.marker(
+                [33.5548036, 126.750578],
+                {
+}
+            ).addTo(marker_cluster_89571a880e0d6dbf93ec2a7bbe0b0a61);
+        
+    
+            var icon_5b7cfbd27d60658aa93012f168db3ec3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_099be7ec1f1a8b3bcd595d2c792faf0e = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_1dbaff289cb58928d5954fd8642ed1a8 = $(`<div id="html_1dbaff289cb58928d5954fd8642ed1a8" style="width: 100.0%; height: 100.0%;">         <div style='font-family: "Malgun Gothic", sans-serif; width: 330px; line-height: 1.6;'>             <div style='font-size: 13px; color: #666;'>🟢 [SOUTH] '26. 6. 7(일)</div>             <h3 style='margin: 5px 0 10px 0; color: green; font-size: 18px;'><b>제주0(507)</b></h3>             <hr style='border: 0.5px solid #ddd; margin: 5px 0 10px 0;'>             <div style='font-size: 13px; color: #333;'>                 <b>1) Camp :</b> 제주0(507)<br>                 <b>2) 대회명 :</b> 제30회 제주관광마라톤 축제<br>                 <b>3) 장소 :</b> 구좌종합운동장(제주특별자치도 제주시 구좌읍 김녕로 209)<br>                 <b>4) 주최 :</b> 제주관광협회(☎064-741-8738)             </div>         </div>         </div>`)[0];
+                popup_099be7ec1f1a8b3bcd595d2c792faf0e.setContent(html_1dbaff289cb58928d5954fd8642ed1a8);
+            
+        
+
+        marker_876e780630e960ee96688ecc9dfa5926.bindPopup(popup_099be7ec1f1a8b3bcd595d2c792faf0e)
+        ;
+
+        
+    
+    
+            marker_876e780630e960ee96688ecc9dfa5926.bindTooltip(
+                `<div>
+                     제주0(507) : 제30회 제주관광마라톤 축제
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_876e780630e960ee96688ecc9dfa5926.setIcon(icon_5b7cfbd27d60658aa93012f168db3ec3);
+            
+    
+            var marker_d0d1024a7bafcadce52f65b3e2444b7d = L.marker(
+                [35.832707, 128.6880973],
+                {
+}
+            ).addTo(marker_cluster_89571a880e0d6dbf93ec2a7bbe0b0a61);
+        
+    
+            var icon_c5e8f824748a30493183373b4989cfae = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b2f809156150064d556fd04fc72c153f = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_1468e628cf148933ff96b78f31d1206c = $(`<div id="html_1468e628cf148933ff96b78f31d1206c" style="width: 100.0%; height: 100.0%;">         <div style='font-family: "Malgun Gothic", sans-serif; width: 330px; line-height: 1.6;'>             <div style='font-size: 13px; color: #666;'>🟢 [SOUTH] '26. 6. 7(일)</div>             <h3 style='margin: 5px 0 10px 0; color: green; font-size: 18px;'><b>대구4(412)</b></h3>             <hr style='border: 0.5px solid #ddd; margin: 5px 0 10px 0;'>             <div style='font-size: 13px; color: #333;'>                 <b>1) Camp :</b> 대구4(412)<br>                 <b>2) 대회명 :</b> 2026 THE RACE DAEGU 10K<br>                 <b>3) 장소 :</b> 대구 스타디움 동편광장(대구 수성구 유니버시아드로 180)<br>                 <b>4) 주최 :</b> 헤럴드경제(☎070-7727-1755)             </div>         </div>         </div>`)[0];
+                popup_b2f809156150064d556fd04fc72c153f.setContent(html_1468e628cf148933ff96b78f31d1206c);
+            
+        
+
+        marker_d0d1024a7bafcadce52f65b3e2444b7d.bindPopup(popup_b2f809156150064d556fd04fc72c153f)
+        ;
+
+        
+    
+    
+            marker_d0d1024a7bafcadce52f65b3e2444b7d.bindTooltip(
+                `<div>
+                     대구4(412) : 2026 THE RACE DAEGU 10K
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d0d1024a7bafcadce52f65b3e2444b7d.setIcon(icon_c5e8f824748a30493183373b4989cfae);
+            
+    
+            marker_cluster_89571a880e0d6dbf93ec2a7bbe0b0a61.addTo(map_aa357813c7ec398605b4e3128a7b930b);
+        
+</script>
+</html>
